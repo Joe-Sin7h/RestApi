@@ -55,17 +55,29 @@ Authorization: Bearer <YOUR TOKEN>
 
 The response body will contain the access token.
 
+Example Response :
+```
+{'created': True, 'orderId': 'abc'}
+```
+
 ### Get all orders ###
 
 GET `/orders`
 
 Allows you to view all orders. Requires authentication.
 
+
+
 ### Get an order ###
 
 GET `/orders/:orderId`
 
 Allows you to view an existing order. Requires authentication.
+
+Example Response :
+```
+{'id': 'abc', 'bookId': 1, 'customerName': 'example', 'createdBy': '71c2e55a6f8516629781a16d207cd9b2dd48e5f930a9688ba19d643e7337ee55', 'quantity': 1}
+```
 
 ### Update an order ###
 
@@ -122,3 +134,9 @@ The request body needs to be in JSON format and include the following properties
  ```
 
 The response body will contain the access token.
+
+Example Response
+
+```
+{'accessToken': '<Token>'}
+```
