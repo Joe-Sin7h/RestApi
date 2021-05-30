@@ -53,8 +53,6 @@ Authorization: Bearer <YOUR TOKEN>
 }
 ```
 
-The response body will contain the access token.
-
 Example Response :
 ```
 {'created': True, 'orderId': 'abc'}
